@@ -3,13 +3,13 @@
 --clr-darkest: rgba(3, 7, 30, 1);
 --clr-dark-sienna: rgba(55, 6, 23, 1);
 --clr-rosewood: rgba(106, 4, 15, 1);
---clr-dark-crimson: rgba(157, 2, 8, 1);
+--clr-dark-crimson: rgba(157, 2, 8, .1);
 --clr-rosso-corsa: rgba(208, 0, 0, 1);
 --clr-vermilion: rgba(220, 47, 2, 1);
 --clr-persimmon: rgba(232, 93, 4, 1);
---clr-tangerine: rgba(244, 140, 6, 1);
+--clr-tangerine: rgba(244, 140, 6, .1);
 --clr-orange-web: rgba(250, 163, 7, 1);
---clr-selective-yellow: rgba(255, 186, 8, 1);
+--clr-selective-yellow: rgba(255, 186, 8, .1);
 --clr-white: rgba(255, 255, 255, 1)
 };
 
@@ -20,8 +20,23 @@
 }
 
 body {
+    line-height: 1.1;
     font-size: large;
     font-family: 'Montserrat', sans-serif;
+}
+
+blockquote {
+    border-radius: 16px;
+    font-size: 1.2em;
+    font-weight: 900;
+    padding: 1.2em;
+    line-height: 1.2;
+    background-color: var(--clr-selective-yellow);
+}
+
+#attribution {
+    font-size: .75em;
+    text-align: right;
 }
 
 .wrapper {
@@ -40,56 +55,65 @@ body {
 
 .menu {
     grid-area: m;
+    align-content: center;
+    min-width: auto;
+
 }
 
 .menu-items {
     display: flex;
+    width: 100%;
     align-content: center;
-    justify-content: space-between;
-    background-color: fuchsia;
+    justify-content: space-around;
+}
+
+h4 {
+    font-size: .5em;
 }
 
 .title {
     grid-area: t;
-    background-color: var(--clr-tangerine);
     text-align: center;
     font-family: 'Montserrat Subrayada', sans-serif;
 }
 
 .icons {
     grid-area: i;
-    background-color: var(--clr-persimmon);
-    text-align: right;
+    display: flex;
 }
 
 .inset {
     grid-area: in;
-    background-color: var(--clr-dark-sienna);
-
 }
 
 .header {
     grid-area: h;
-    background-color: var(--clr-orange-web);
 }
 
 .content {
     grid-area: c;
-    background-color: var(--clr-white);
+    background-color: var(--clr-tangerine);
+
 }
 
 .footer {
+    font-size: xx-small;
     grid-area: f;
     justify-self: end;
-    background-color: var(--clr-rosewood);
+    color: var(--clr-vermilion);
 }
 
 figure figcaption {
     color: #666;
     font-style: italic;
-    font-size: 0.5em;
+    font-size: 0.4em;
+    text-align: right;
 }
 
 img {
     width: 100%;
+}
+
+i {
+    color:rgba(3, 7, 30, 1);
 }
