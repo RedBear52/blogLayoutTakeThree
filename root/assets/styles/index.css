@@ -29,50 +29,67 @@ body {
     display: grid;
     grid-gap: 3px;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 80px auto 40px 40px;
+    grid-template-rows: 80px auto auto 40px;
+    grid-template-areas: 
+    "m m m m t t t t i i i i"
+    "h h h h h h h h h h h h"
+    "in in in in in in c c c c c c"
+    "f f f f f f f f f f f f"
+    ;
 }
 
 .menu {
-    grid-column: 1 / 5;
+    grid-area: m;
 }
 
-/* .menu-items {
+.menu-items {
     display: flex;
     align-content: center;
     justify-content: space-between;
     background-color: fuchsia;
-} */
+}
 
 .title {
-    grid-column: 5 / 9;
+    grid-area: t;
     background-color: var(--clr-tangerine);
     text-align: center;
     font-family: 'Montserrat Subrayada', sans-serif;
 }
 
 .icons {
-    grid-column: 9 / -1;
+    grid-area: i;
     background-color: var(--clr-persimmon);
     text-align: right;
 }
 
 .inset {
-    grid-column: span 6;
+    grid-area: in;
     background-color: var(--clr-dark-sienna);
 
 }
 
 .header {
-    grid-column: 1 / -1;
+    grid-area: h;
     background-color: var(--clr-orange-web);
 }
 
 .content {
-    grid-column: span 6;
+    grid-area: c;
     background-color: var(--clr-white);
 }
 
 .footer {
-    grid-column: span 12;
+    grid-area: f;
+    justify-self: end;
     background-color: var(--clr-rosewood);
+}
+
+figure figcaption {
+    color: #666;
+    font-style: italic;
+    font-size: 0.5em;
+}
+
+img {
+    width: 100%;
 }
