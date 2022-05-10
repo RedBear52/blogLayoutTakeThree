@@ -1,0 +1,45 @@
+.wrapper > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #ffeead;
+  }
+  
+  html, body {
+    box-sizing: border-box;
+    background-color: #ffeead;
+    height: 100%;
+    padding: 10px;
+    margin: 0px;
+  }
+  
+  .wrapper > div:nth-child(1n) {
+    background-color: black;
+	
+  }
+  
+  .wrapper > div:nth-child(3n) {
+    background-color: mediumseagreen;
+  }
+  
+  .wrapper > div:nth-child(2n) {
+    background-color: aqua;
+  }
+  
+  .wrapper > div:nth-child(4n) {
+    background-color: blue;
+  }
+
+  .wrapper > div:nth-child(5n) {
+    background-color: red;
+    ;
+  }
+
+  .wrapper > div:nth-child(6n) {
+    background-color: purple;
+  }
+
+  .wrapper > div:nth-child(7n) {
+    background-color: pink;
+  }
