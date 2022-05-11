@@ -3,13 +3,13 @@
 --clr-darkest: rgba(3, 7, 30, 1);
 --clr-dark-sienna: rgba(55, 6, 23, 1);
 --clr-rosewood: rgba(106, 4, 15, 1);
---clr-dark-crimson: rgba(157, 2, 8, .1);
+--clr-dark-crimson: rgba(157, 2, 8, .2);
 --clr-rosso-corsa: rgba(208, 0, 0, 1);
 --clr-vermilion: rgba(220, 47, 2, 1);
 --clr-persimmon: rgba(232, 93, 4, 1);
---clr-tangerine: rgba(244, 140, 6, .1);
+--clr-tangerine: rgba(244, 140, 6, .2);
 --clr-orange-web: rgba(250, 163, 7, 1);
---clr-selective-yellow: rgba(255, 186, 8, .1);
+--clr-selective-yellow: rgba(255, 186, 8, .2);
 --clr-white: rgba(255, 255, 255, 1)
 };
 
@@ -23,15 +23,15 @@ body {
     line-height: 1.1;
     font-size: large;
     font-family: 'Montserrat', sans-serif;
+    color: var(--clr-dark-sienna)
 }
 
 blockquote {
-    border-radius: 16px;
-    font-size: 1.2em;
-    font-weight: 900;
-    padding: 1.2em;
-    line-height: 1.2;
-    background-color: var(--clr-selective-yellow);
+   
+}
+
+h4 {
+
 }
 
 #attribution {
@@ -51,6 +51,16 @@ blockquote {
     "in in in in in in c c c c c c"
     "f f f f f f f f f f f f"
     ;
+}
+
+p {
+    word-wrap: strict;
+}
+
+.article-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25em;
+    padding: 0;
 }
 
 .menu {
@@ -75,6 +85,7 @@ h4 {
     grid-area: t;
     text-align: center;
     font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 2.25em;
 }
 
 .icons {
@@ -84,16 +95,33 @@ h4 {
 
 .inset {
     grid-area: in;
+    border-radius: 16px;
+    font-size: 1.2em;
+    font-weight: 900;
+    padding: 1.2em;
+    line-height: 1.2;
+    background-color: var(--clr-selective-yellow);
 }
 
 .header {
     grid-area: h;
 }
 
+.post-link {
+    color: var(--clr-vermilion)
+}
+
+.read-more {
+    text-align: end;
+    padding-top: 2em;
+    color: var(--clr-vermilion);
+}
+
 .content {
     grid-area: c;
     background-color: var(--clr-tangerine);
-
+    padding: 1.5em;
+    border-radius: 16px;
 }
 
 .footer {
@@ -103,11 +131,14 @@ h4 {
     color: var(--clr-vermilion);
 }
 
+
 figure figcaption {
     color: #666;
     font-style: italic;
     font-size: 0.4em;
     text-align: right;
+    padding-top: 0;
+    padding-bottom: .75em;
 }
 
 img {

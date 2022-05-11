@@ -13,6 +13,7 @@
   }
   
   .wrapper > div:nth-child(1n) {
+      font-family:sans-serif;
       font-weight: 900;
       letter-spacing: -1px;
   }
@@ -23,7 +24,8 @@
     font-size: .8em;
   }
   
-  .wrapper > div:nth-child(2n) {
+  /* .wrapper > div:nth-child(2n) {
+      
   }
   
   .wrapper > div:nth-child(4n) {
@@ -34,7 +36,7 @@
   }
 
   .wrapper > div:nth-child(6n) {
-  }
+  } */
 
   .wrapper > div:nth-child(7n) {
     font-size: smaller;
