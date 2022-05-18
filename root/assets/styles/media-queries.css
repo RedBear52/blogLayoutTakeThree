@@ -1,18 +1,26 @@
 @media (max-width: 992px) {
-    .wrapper-992 {
+
+
+    .wrapper {
+        height: 100%;
+        display: grid;
+        grid-gap: 3px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto;
         grid-template-areas: 
-    "m m m m m m m m m m m m"
-    "t t t t t t t t t t t t"
-    "i i i i i i i i i i i i"
-    "h h h h h h h h h h h h"
-    "in in in in in in c c c c c c"
-    "f f f f f f f f f f f f"
-    ;
-    }
+        "m m m m m m m m m m m m"
+        "t t t t t t t t t t t t"
+        "i i i i i i i i i i i i"
+        "h h h h h h h h h h h h"
+        "in in in in in in in in in in in in"
+        "c c c c c c c c c c c c"
+        "f f f f f f f f f f f f"
+        ;
+        }
 
     .menu {
         background-color: var(--clr-selective-yellow);
-        padding: 1em;
+        /* padding: 1em; */
     }
 
     .title {
@@ -22,7 +30,7 @@
     .icons {
     margin-bottom: 1em;
     background-color: var(--clr-tangerine);
-    padding: 1em;
+    /* padding: 1em; */
     }
 
 }
