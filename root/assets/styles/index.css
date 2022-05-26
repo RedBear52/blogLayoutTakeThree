@@ -16,21 +16,11 @@
 --clr-white: rgba(255, 255, 255, 1)
 };
 
-*,
-*::before,
-*::after {
-    
-}
-
 body {
     line-height: 1.1;
     font-size: large;
     font-family: 'Montserrat', sans-serif;
     color: var(--clr-dark-sienna);
-}
-
-blockquote {
-   
 }
 
 #attribution {
@@ -52,17 +42,11 @@ blockquote {
     ;
 }
 
-p {
-    /* word-wrap: strict; */
-}
-
 .article-text {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.25em;
     padding: 0;
 }
-
-
 
 .menu-items {
     display: flex;
@@ -76,18 +60,34 @@ h1 {
     font-family: 'Montserrat Subrayada', sans-serif;
     color: var(--clr-persimmon);
     text-shadow: 3px 1px 1px  var(--clr-dark-sienna);
-    /* transform: translateX(5px); */
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--clr-darkest);
+    padding-bottom: 0.25em;
+
+}
+
+h3 {
+    font-size: .5em;
+    padding-bottom: 1em;
 }
 
 h4 {
-    font-size: .5em;
+    color: #666;
+    font-style: italic;
+    text-align: right;
+    padding: 0.5em;
+
 }
 
 .menu {
     grid-area: m;
     align-content: center;
     min-width: auto;
-    
 }
 
 .title {
@@ -116,16 +116,21 @@ h4 {
 }
 
 .post-link {
-    color: var(--clr-vermilion)
+    color: var(--clr-white)
 }
 
-.read-more {
-    text-align: end;
-    padding-top: 2em;
-    color: var(--clr-vermilion);
+button {
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+    padding: 1em;
+    float: right;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--clr-persimmon);
 }
 
-.content {
+.content-card {
     grid-area: c;
     background-color: var(--clr-tangerine);
     padding: 1.5em;
@@ -139,6 +144,9 @@ h4 {
     color: var(--clr-vermilion);
 }
 
+a {
+    text-decoration: none;
+}
 
 figure figcaption {
     color: #666;
@@ -154,5 +162,5 @@ img {
 }
 
 i {
-    color:rgba(3, 7, 30, 1);
+    color: var(--clr-darkest);
 }
