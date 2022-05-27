@@ -16,6 +16,10 @@
     --clr-white: rgba(255, 255, 255, 1)
 };
 
+link {
+    color:rgba(208, 0, 0, 1);
+}
+
 body {
     line-height: 1.1;
     font-size: large;
@@ -143,6 +147,7 @@ button {
 
 a {
     text-decoration: none;
+    color: var(--clr-darkest)
 }
 
 figure figcaption {
