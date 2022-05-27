@@ -120,6 +120,16 @@ h4 {
     color: var(--clr-white)
 }
 
+.byline-card {
+    min-width: 100%;
+}
+
+.avatar {
+    max-height: 50px;
+    max-width: 50px;
+    border-radius: 50%;
+}
+
 button {
     font-weight: bold;
     display: flex;
