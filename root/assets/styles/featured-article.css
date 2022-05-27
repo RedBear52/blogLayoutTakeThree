@@ -1,37 +1,49 @@
-@media (max-width: 992px) {
 
-    .wrapper {
-        height: 100%;
-        display: grid;
-        grid-gap: 3px;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "m m m m m m m m m m m m"
-        "t t t t t t t t t t t t"
-        "i i i i i i i i i i i i"
-        "in in in in in in in in in in in in"
-        "c c c c c c c c c c c c"
-        "f f f f f f f f f f f f"
-        ;
-    }
-
-    .menu {
-        background-color: var(--clr-selective-yellow);
-        padding: 1em;
-    }
-
-    .title {
-        padding: 1em;
-        font-size: 1em;
-    }
-
-    .icons {
-        margin-bottom: 1em;
-        background-color: var(--clr-tangerine);
-        padding: 1em;
-    }
+:root {
+    --clr-darkest: rgba(3, 7, 30, 1);
+    --clr-purple: #5a189a;
+    --clr-dark-purple: #240046;
+    --clr-gold: #f7d002;
 }
+
+.wrapper {
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "m m m m t t t t i i i i"
+    "im im im im im im im im im im im im"
+    "c c c c c c c c c c c c"
+    "f f f f f f f f f f f f"
+    ;
+}
+
+.menu {
+    padding: 1em;
+}
+
+.happel-pic {
+    grid-area: im;
+}
+
+.title {
+    padding: 1em;
+    font-size: 1em;
+}
+
+.icons {
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
+h1 {
+    font-family: 'Montserrat Subrayada';
+    color: var(--clr-purple);
+    text-shadow: 3px 1px 1px  var(--clr-gold);
+}
+
 
 @media (max-width: 1200px) {
     h1 {
