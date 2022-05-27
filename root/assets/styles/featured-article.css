@@ -77,13 +77,11 @@ button {
     display: block;
     justify-items:normal;
     background-color: pink;
-
 }
 
 .author-name {
     margin-bottom: 0.5em;
 }
-
 
 @media (max-width: 1200px) {
     h1 {

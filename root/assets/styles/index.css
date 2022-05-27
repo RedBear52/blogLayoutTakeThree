@@ -1,3 +1,5 @@
+@import url('featured-article.css');
+@import url('root/assets/styles/blog-article-media-queries.css');
 @import url('media-queries.css');
 
 :root {
@@ -16,8 +18,17 @@
     --clr-white: rgba(255, 255, 255, 1)
 };
 
-link {
-    color:rgba(208, 0, 0, 1);
+    /* -----ELEMENT PROPERTIES----- */
+a {
+    text-decoration: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active { 
+    color: var(--clr-white);
+    text-decoration: none; 
 }
 
 body {
@@ -27,36 +38,25 @@ body {
     color: var(--clr-dark-sienna);
 }
 
-#attribution {
-    font-size: .75em;
-    text-align: right;
-}
-
-.wrapper {
-    height: 100%;
-    display: grid;
-    grid-gap: 3px;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 80px auto auto 40px;
-    grid-template-areas: 
-    "m m m m t t t t i i i i"
-    "h h h h h h h h h h h h"
-    "in in in in in in c c c c c c"
-    "f f f f f f f f f f f f"
-    ;
-}
-
-.article-text {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.25em;
-    padding: 0;
-}
-
-.menu-items {
+button {
+    font-weight: bold;
+    color: #fff;
     display: flex;
-    width: 100%;
-    align-content: center;
-    justify-content: space-around;
+    text-align: center;
+    padding: 1em;
+    float: right;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--clr-rosso-corsa);
+}
+
+figure figcaption {
+    color: #666;
+    font-style: italic;
+    font-size: 0.4em;
+    text-align: right;
+    padding-top: 0;
+    padding-bottom: .75em;
 }
 
 h1 {
@@ -75,6 +75,7 @@ h2 {
 }
 
 h3 {
+    color: var(--clr-darkest);
     font-size: .5em;
     padding-bottom: 0;
 }
@@ -85,43 +86,38 @@ h4 {
     text-align: right;
 }
 
-.menu {
-    grid-area: m;
-    align-content: center;
-    min-width: auto;
+i {
+    color: var(--clr-darkest);
 }
 
-.title {
-    grid-area: t;
-    text-align: center;
-    font-size: 2.5em;
+img {
+    width: 100%;
+}
+    
+link {
+    color: var(--clr-darkest);
 }
 
-.icons {
-    grid-area: i;
-    display: flex;
+    /* -----CONTAINER----- */
+.wrapper {
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 80px auto auto 40px;
+    grid-template-areas: 
+    "m m m m t t t t i i i i"
+    "h h h h h h h h h h h h"
+    "in in in in in in c c c c c c"
+    "f f f f f f f f f f f f"
+    ;
 }
 
-.inset {
-    grid-area: in;
-    border-radius: 16px;
-    font-size: 1.2em;
-    font-weight: 900;
-    padding: 1.2em;
-    line-height: 1.2;
-    background-color: var(--clr-selective-yellow);
-}
-
-.header {
-    grid-area: h;
-}
-
-.post-link {
-    color: var(--clr-white)
-}
-
-.byline-card {
-    min-width: 100%;
+    /* -----CLASS PROPERTIES----- */
+.article-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25em;
+    padding: 0;
 }
 
 .avatar {
@@ -130,15 +126,8 @@ h4 {
     border-radius: 50%;
 }
 
-button {
-    font-weight: bold;
-    display: flex;
-    text-align: center;
-    padding: 1em;
-    float: right;
-    border: none;
-    border-radius: 8px;
-    background-color: var(--clr-rosso-corsa);
+.byline-card {
+    min-width: 100%;
 }
 
 .content-card {
@@ -155,24 +144,48 @@ button {
     color: var(--clr-darkest);
 }
 
-a {
+.header {
+    grid-area: h;
+}
+
+.icons {
+    grid-area: i;
+    display: flex;
+    margin: 0;
+}
+
+.inset {
+    grid-area: in;
+    border-radius: 16px;
+    font-size: 1.2em;
+    font-weight: 900;
+    padding: 1.2em;
+    line-height: 1.2;
+    background-color: var(--clr-selective-yellow);
+}
+
+.menu {
+    grid-area: m;
+    align-content: center;
+    min-width: auto;
     text-decoration: none;
-    color: var(--clr-darkest)
 }
 
-figure figcaption {
-    color: #666;
-    font-style: italic;
-    font-size: 0.4em;
-    text-align: right;
-    padding-top: 0;
-    padding-bottom: .75em;
-}
-
-img {
+.menu-items {
+    display: flex;
     width: 100%;
+    align-content: center;
+    justify-content: space-around;
 }
 
-i {
-    color: var(--clr-darkest);
+.title {
+    grid-area: t;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+    /* -----ID PROPERTIES----- */
+#attribution {
+    font-size: .75em;
+    text-align: right;
 }
