@@ -17,6 +17,10 @@
         ;
     }
 
+    h1 {
+        font-size: 1.25em;
+    }
+
     .menu {
         background-color: var(--clr-selective-yellow);
         padding: 1em;
@@ -34,7 +38,7 @@
     }
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 993px) and (max-width: 1400px) {
     h1 {
         font-size: 1em;
     }
