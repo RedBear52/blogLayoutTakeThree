@@ -2,6 +2,7 @@
 :root {
     --clr-darkest: rgba(3, 7, 30, 1);
     --clr-purple: #5a189a;
+    --clr-transparent-purple: rgba(90, 24, 154, .2);
     --clr-dark-purple: #240046;
     --clr-gold: #f7d002;
 }
@@ -16,8 +17,20 @@
     "m m m m t t t t i i i i"
     "im im im im im im im im im im im im"
     "c c c c c c c c c c c c"
+    "b b b b b b b b b b b b"
     "f f f f f f f f f f f f"
     ;
+}
+
+.article-card {
+    grid-area: c;
+    background-color: var(--clr-selective-yellow);
+    padding: 1.5em;
+    border-radius: 16px;
+}
+
+.article-text {
+    font-size: 0.75em;
 }
 
 .menu {
@@ -42,6 +55,24 @@ h1 {
     font-family: 'Montserrat Subrayada';
     color: var(--clr-purple);
     text-shadow: 3px 1px 1px  var(--clr-gold);
+}
+
+button {
+    background-color: var(--clr-dark-purple);
+    font-weight: bolder;
+    display: flex;
+    padding: 1em;
+    justify-content: center;
+    float: unset;
+    border: none;
+    border-radius: 8px;
+    min-width: 140px;
+    grid-area: b;
+}
+
+.article-buttons {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 
