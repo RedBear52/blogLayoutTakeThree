@@ -42,6 +42,7 @@ button {
     font-weight: bold;
     color: #fff;
     display: flex;
+    min-width: 150px;
     text-align: center;
     padding: 1em;
     float: right;
@@ -117,6 +118,7 @@ link {
 .article-text {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.25em;
+    letter-spacing: 0.3px;
     padding: 0;
 }
 
