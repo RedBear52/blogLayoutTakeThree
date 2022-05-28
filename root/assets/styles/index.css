@@ -1,6 +1,6 @@
 @import url('featured-article.css');
 @import url('root/assets/styles/blog-article-media-queries.css');
-@import url('media-queries.css');
+@import url('homepage-media-queries.css');
 
 :root {
     /* -----COLOR PALETTE----- */

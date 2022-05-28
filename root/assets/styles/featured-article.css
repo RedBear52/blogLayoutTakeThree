@@ -1,5 +1,6 @@
 
 :root {
+    /* -----COLOR PALETTE----- */
     --clr-darkest: rgba(3, 7, 30, 1);
     --clr-purple: #5a189a;
     --clr-transparent-purple: rgba(90, 24, 154, .2);
@@ -7,61 +8,7 @@
     --clr-gold: #f7d002;
 }
 
-.wrapper {
-    height: 100%;
-    display: grid;
-    grid-gap: 3px;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "m m m m t t t t i i i i"
-    "im im im im im im im im im im im im"
-    "c c c c c c c c c c c c"
-    "b b b b b b b b b b b b"
-    "f f f f f f f f f f f f"
-    ;
-}
-
-.article-card {
-    grid-area: c;
-    background-color: var(--clr-selective-yellow);
-    padding: 1.5em;
-    border-radius: 16px;
-}
-
-.article-text {
-    font-size: 0.5em;
-    margin-bottom: 0;
-}
-
-.byline-card {
-    margin: 0.5em;
-}
-
-.menu {
-    padding: 1em;
-}
-
-.happel-pic {
-    grid-area: im;
-}
-
-.title {
-    padding: 1em;
-    font-size: 1em;
-}
-
-.icons {
-    margin-bottom: 1em;
-    padding: 1em;
-}
-
-h1 {
-    font-family: 'Montserrat Subrayada';
-    color: var(--clr-purple);
-    text-shadow: 3px 1px 1px  var(--clr-gold);
-}
-
+    /* -----ELEMENT PROPERTIES----- */
 button {
     background-color: var(--clr-dark-purple);
     width: 15%;
@@ -77,11 +24,45 @@ button {
     margin: 0.5em;
 }
 
+h1 {
+    font-family: 'Montserrat Subrayada';
+    color: var(--clr-purple);
+    text-shadow: 3px 1px 1px  var(--clr-gold);
+}
+
+    /* -----CONTAINER----- */
+.wrapper {
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "m m m m t t t t i i i i"
+    "im im im im im im im im im im im im"
+    "c c c c c c c c c c c c"
+    "b b b b b b b b b b b b"
+    "f f f f f f f f f f f f"
+    ;
+}
+
+    /* -----CLASS PROPERTIES----- */
 .article-buttons {
     width: 100%;
     display: block;
     justify-items:normal;
-    background-color: pink;
+}
+
+.article-card {
+grid-area: c;
+background-color: var(--clr-selective-yellow);
+padding: 1.5em;
+border-radius: 16px;
+}
+
+.article-text {
+    font-size: 0.5em;
+    margin-bottom: 0;
 }
 
 .author-name {
@@ -91,8 +72,25 @@ button {
     margin-bottom: 0.5em;
 }
 
-@media (max-width: 1200px) {
-    h1 {
-        font-size: 1em;
-    }
+.byline-card {
+    margin: 0.5em;
 }
+
+.happel-pic {
+    grid-area: im;
+}
+
+.icons {
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
+.menu {
+    padding: 1em;
+}
+
+.title {
+    padding: 1em;
+    font-size: 1em;
+}
+
