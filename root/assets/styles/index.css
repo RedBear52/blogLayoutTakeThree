@@ -34,7 +34,8 @@ a:active {
 body {
     line-height: 1.1;
     font-size: large;
-    font-family: 'Montserrat', sans-serif;
+    font-weight: unset;
+    /* font-family: 'Montserrat', sans-serif; */
     color: var(--clr-dark-sienna);
 }
 
@@ -77,14 +78,14 @@ h2 {
 
 h3 {
     color: var(--clr-darkest);
-    font-size: .5em;
+    font-size: 0.5em;
     padding-bottom: 0;
 }
 
 h4 {
-    color: #666;
-    font-style: italic;
-    text-align: right;
+    color: var(--clr-darkest);
+    font-size: 2em;
+    padding-bottom: 0;
 }
 
 i {
@@ -116,7 +117,8 @@ link {
 
     /* -----CLASS PROPERTIES----- */
 .article-text {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
+    font-weight: initial;
     font-size: 1.25em;
     letter-spacing: 0.3px;
     padding: 0;
@@ -130,6 +132,7 @@ link {
 
 .byline-card {
     min-width: 100%;
+    font-size: larger;
 }
 
 .content-card {

@@ -68,11 +68,12 @@ border-radius: 16px;
 .author-name {
     font-weight: 200;
     font-size: .4em;
+    line-height: 0.8;
     margin-bottom: 0.5em;
 }
 
 .byline-card {
-    letter-spacing: 1px;
+    letter-spacing: .5px;
     margin: 0.5em;
 }
 
